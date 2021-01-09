@@ -5,3 +5,27 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+# generate 20 users
+(1..20).each do |id|
+    User.create!(
+        id: id,
+        name: Faker::Name.name,
+        email: Faker::Internet.email
+        role: %w[customer owner].sample
+    )
+end
+
+
+(1..10).each do |id|
+    Bike.create!(
+        id: id,
+        user_id: rand(1..20),
+        Model: Faker::University.name,
+        status: %w[new very good good].sample,
+# generate a fake paragraph
+        Price: Faker::Commerce.price
+    )
+end
