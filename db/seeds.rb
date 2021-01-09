@@ -6,27 +6,23 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# require 'faker'
+require 'faker'
+User.destroy_all
+# generate 20 users
+20.times do
+    User.create!(
+        email: Faker::Internet.email,
+        password: "123456"
+    )
 
-# # generate 20 users
-# (1..20).each do |id|
-#     User.create!(
-#         id: id,
-#         name: Faker::Name.name,
-#         email: Faker::Internet.email
-#         role: %w[customer owner].sample
-#     )
-
-# end
+end
 
 
-# (1..10).each do |id|
-#     Bike.create!(
-#         id: id,
-#         user_id: rand(1..20),
-#         Model: Faker::University.name,
-#         status: %w[new very good good].sample,
-# # generate a fake paragraph
-#         Price: Faker::Commerce.price
-#     )
-# end
+10.times do
+    Bike.create!(
+        user: User.find(rand(1..10)),
+        model: Faker::University.name,
+        condition: %w[new very good good].sample,
+        price: Faker::Commerce.price
+    )
+end
