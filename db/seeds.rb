@@ -16,6 +16,7 @@ require 'faker'
         email: Faker::Internet.email
         role: %w[customer owner].sample
     )
+
 end
 
 
