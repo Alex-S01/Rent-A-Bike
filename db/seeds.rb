@@ -7,22 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+
+puts "cleaning up database"
 User.destroy_all
+puts "database is clean"
+
 # generate 20 users
 20.times do
-    User.create!(
+    user = User.create!(
         email: Faker::Internet.email,
         password: "123456"
     )
 
+    puts "User #{user.id} is created"
 end
 
 
 10.times do
-    Bike.create!(
-        user: User.find(rand(1..10)),
-        model: Faker::University.name,
-        condition: %w[new very good good].sample,
+    bike = Bike.create!(
+      # user: User.find(rand(1..10)),
+        user: User.find(rand((User.first.id)..(User.last.id))),
+        model: Faker::Vehicle.model,
+        condition: %w[new very_good good].sample,
         price: Faker::Commerce.price
     )
+
+    puts "Bike #{bike.id} is created"
 end
+
+puts "done"
