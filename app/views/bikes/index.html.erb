@@ -1,9 +1,9 @@
 <div class="container">
-<ul>
-  <% @bikes.each do |bike| %>
-    <li><%=bike.model%></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @bikes.each do |bike| %>
+      <li><%= bike.model %> (<%= bike.id %>)</li>
+    <% end %>
+  </ul>
 </div>
 
 
