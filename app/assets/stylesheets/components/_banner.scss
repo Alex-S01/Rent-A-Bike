@@ -1,8 +1,10 @@
 .home-banner {
-  background-image: url('TODO: A picture URL from unsplash.com!');
+  background-image: url('RentABikeLogo.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 30vh;
+  opacity: 1;
+  width: 100vh;
   color: #eee;
-  text-align: center;
+  justify-content:space-between;
   padding-top: 40vh;
 }
