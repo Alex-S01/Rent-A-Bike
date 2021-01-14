@@ -1,7 +1,15 @@
 <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
 <h1><%= @bike.model%></h1>
 <p><%= @bike.condition %></p>
 <p><%= @bike.price %></p>
+
+<%= link_to 'New post', new_bike_path %>
+<%= link_to 'Back', bikes_path %>|
+
+</div>
+</div>
 </div>
 
 
