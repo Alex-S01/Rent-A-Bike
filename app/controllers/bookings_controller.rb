@@ -1,12 +1,16 @@
 class BookingsController < ApplicationController
     def index
-      @bookings = Booking.all
+      @bike = Bike.find_by(id: params[:bike_id])
+      if @bike.present?
+        @bookings = @bike.bookings
+      else
+        @bookings = Booking.all
+      end
     end
 
     def show
       @booking = Booking.find(params[:id])
     end
-
 
     def new
       @bike = Bike.find(params[:bike_id])
@@ -17,9 +21,9 @@ class BookingsController < ApplicationController
       @bike = Bike.find(params[:bike_id])
       @booking = Booking.new(booking_params)
       @booking.bike = @bike
-      raise
+      @booking.user = current_user
       @booking.save
-      redirect_to bike_booking_path(@bike)
+      redirect_to bike_bookings_path(@bike)
     end
 
     private
