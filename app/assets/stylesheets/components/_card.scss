@@ -1,0 +1,12 @@
+#how-it-works .card {
+  padding: 40px;
+  border-radius: 8px;
+  height: 60vh;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+#how-it-works .card:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}

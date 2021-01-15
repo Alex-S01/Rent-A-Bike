@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 body {
-
+  color: black;
   font-family: Nunito, sans-serif;
   background:grey lighter;
 }
@@ -11,14 +11,23 @@ h1, h2, h3, h4 {
 
   text-align: center;
 
+}
+
+.cards-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 0 40px 0;
+}
+
+
+
   // span {
     // background-color:red;
     // border-radius :20px;
     // padding: 10px;
     // color:white;
   // }
-}
-
 
 // a {
   // text-decoration :none;
