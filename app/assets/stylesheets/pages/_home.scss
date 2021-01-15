@@ -1,25 +1,30 @@
 // Specific CSS for your home-page
 body {
 
-  font-family : Helvetica;
-
+  font-family: Nunito, sans-serif;
   background:grey lighter;
 }
-h1 {
-  font-family :sans-serif;
-  span {
-    background-color:red;
-    border-radius :20px;
-    padding: 10px;
-    color:white;
-  }
+
+h1, h2, h3, h4 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+
+  text-align: center;
+
+  // span {
+    // background-color:red;
+    // border-radius :20px;
+    // padding: 10px;
+    // color:white;
+  // }
 }
 
-a {
-  text-decoration :none;
-  opacity :0.7;
-  & :hover {
-    opacity: 1;
-  }
-}
+
+// a {
+  // text-decoration :none;
+  // opacity :0.7;
+  // & :hover {
+    // opacity: 1;
+  // }
+// }
 

@@ -1,0 +1,21 @@
+.btn-home {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin-top: 8px;
+  color: white;
+  border-radius: 16px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: black;
+  font-weight: bold;
+}
+
+.btn-home:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+  // transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}

@@ -1,10 +1,44 @@
 .home-banner {
-  background-image: url('RentABikeLogo.jpg');
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('white-bike-min.jpg');
+  height: 100vh;
+  background-position: center;
   background-size: cover;
-  height: 30vh;
-  opacity: 1;
-  width: 100vh;
-  color: #eee;
-  justify-content:space-between;
-  padding-top: 40vh;
+  margin-bottom: 20px;
 }
+
+.inner-container {
+  padding: px 40px 80px 40px;
+  text-align: center;
+  
+}
+
+.text-container {
+  border-radius: 2px;
+}
+
+// span {
+  // background-color: black;
+  // background-color:rgba(41, 133, 244, 0.7);
+  // padding: 0 2px 0 2px;
+// }
+
+h1 {
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+  // background-color: black;
+  // padding: 4px;
+  text-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+p {
+  color: white;
+  font-size: 24px;
+  // background-color: black;
+  // padding: 4px;
+  text-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
