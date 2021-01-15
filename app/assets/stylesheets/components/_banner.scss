@@ -34,7 +34,7 @@ h1 {
   text-shadow: 0px 10px 30px rgba(0,0,0,0.3);
 }
 
-p {
+.inner-container p {
   color: white;
   font-size: 24px;
   // background-color: black;
@@ -42,3 +42,15 @@ p {
   text-shadow: 0px 10px 30px rgba(0,0,0,0.3);
 }
 
+.banner-try-now {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: black;
+  background-size: cover;
+  color: white;
+  height: 40vh;
+}

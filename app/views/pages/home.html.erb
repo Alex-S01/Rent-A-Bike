@@ -8,38 +8,36 @@
   </div>
 </div>
 
-
 <div class="container" id="how-it-works">
   <h2>How Rentabike works 🚲</h2>
-
-  <div class="d-flex justify-content-around">
+  <div class="cards-home">
     <div class="card" style="width: 18rem;">
-      <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Search</h4>
-        <p class="card-text">Our map and filters help you easily find the bike that best fits your needs and taste.</p>
-      </div>
+      <h4 class="card-title">Search <i class="fas fa-search"></i></h4>
+      <p class="card-text">Our map and filters help you easily find the bike that best fits your needs and taste.</p>
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Book</h4>
-        <p class="card-text">Eco-friendly, Renting bikes is getting more and more popular</p>
-        <a href="#" class="btn btn-primary">Go book a bike</a>
-      </div>
+      <h4 class="card-title">Book <i class="fas fa-shopping-basket"></i></h4>
+      <p class="card-text">Get in touch with one of our verified users and book their bike for a determined duration and price.</p>
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Ride</h4>
-        <p class="card-text">Eco-friendly, Renting bikes is getting more and more popular</p>
-        <a href="#" class="btn btn-primary">Go book a bike</a>
-      </div>
+      <h4 class="card-title">Ride <i class="fas fa-bicycle"></i></h4>
+      <p class="card-text">You're good to go! Ride freely until your booking comes to an end.</p>
+    </div>
+</div>
+  </div>
+  
+  <div class="banner-try-now">
+    <div>
+      <h2>Get 20% off your first booking!</h2>
+      <p>View all the bikes available near you.</p>
+    </div>
+    <div>
+      <%= link_to "Discover our available bikes", bikes_path, class: "btn-white" %>
     </div>
   </div>
-</div>
+
 
 <div class="container">
   <h3>Read our latest blog articles 🚲 <small><i class="fas fa-chevron-down"></i></small></h3>
