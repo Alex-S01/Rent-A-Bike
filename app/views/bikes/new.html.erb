@@ -6,6 +6,8 @@
     <div class="container-new-form">
       <%= simple_form_for(@bike) do |f| %>
 
+        <%= f.error_notification %>
+
         <div class="form-inputs">
           <%= f.label :model, "Enter the name of your bike model"%>
           <%= f.text_field :model %>
