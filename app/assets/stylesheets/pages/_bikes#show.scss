@@ -1,1 +1,29 @@
+.show-container {
+  padding-top:100px;
+  border:1px solid red;
+
+}
+
+.img {
+  width : 50%;
+  border-radius:10px;
+}
+
+.description-all {
+  justify-content: space-between;
+  opacity: 0.7;
+  border: 0px solid black;
+  text-align: center;
+  border-radius: 10px;
+  font-size:auto;
+  background: red;
+  line-height: 3.4em;
+  color: white;
+  width: 20%;
+  padding: 10px;
+  flex-direction: row;
+}
+
+
+
 
