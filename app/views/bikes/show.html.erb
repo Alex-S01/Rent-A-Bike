@@ -1,16 +1,49 @@
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-<h1><%= @bike.model%></h1>
-<p><%= @bike.condition %></p>
-<p><%= @bike.price %></p>
+<div class="d-flex justify-content-around">
 
-<%= link_to 'New post', new_bike_path %>
-<%= link_to 'Back', bikes_path %>|
+
+      <div class="img">
+           <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
+      </div>
+
+    <div class ="description-all">
+
+      <div class = "descrition-one detail" style="font-size:50px;"><%= @bike.model%> </div>
+      <br/>
+      <div class = "descrition-one detail"> State : <%= @bike.condition %> </div>
+      <div class = "descrition-one detail"><%= @bike.price %> EUR </div>
+      <div> Some details about this bike</div>
+
+      <%= link_to "Back", bikes_path %> |
+      <%= link_to "Book now", new_bike_booking_path %>
+
+
+      </div>
+
+
+
+
+
+    <div class="footer" style ="position:fixed; bottom:0;text-align:center;">
+      <br/>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+      </div>
+    </div>
+  </div>
+
+
 
 </div>
 </div>
-</div>
+
 
 
 
