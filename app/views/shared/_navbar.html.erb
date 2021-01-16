@@ -17,10 +17,15 @@
         <li class="nav-item">
           <%= link_to "Bikes", bikes_path, class: "nav-link" %>
         </li>
+        
+        <li class="nav-item">
+          <%= link_to "Add a bike", new_bike_path, class: "nav-link" %>
+        </li>
 
         <li class="nav-item">
           <%= link_to "Bookings", bookings_path, class: "nav-link" %>
         </li>
+
 
         <li class="nav-item dropdown">
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
