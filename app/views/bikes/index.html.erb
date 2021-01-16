@@ -1,52 +1,22 @@
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-
-
-
-
-      <h1>Bikes available</h1>
-
-      <table>
-        <thead>
-          <tr>
-
-
-            <ul>
-              <% @bikes.each do |bike| %>
-              <tr>
-                <div class="card" style="width: 18rem;">
-
-                  <li><%= bike.model %></li>
-                  <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"> <li>State : <%= bike.condition %> </li>
-                     <li><%= bike.price %> EUR</li>
-                   </h5>
-                   <p class="card-text">Some details about this bike</p>
-                   <%= link_to 'More details', bike_path(bike) %>
-                 </div>
-                 <% end %>
-               </ul>
-
-             </div>
-           </div>
-         </div>
-
-
-
-
-        <%= link_to 'New Post', new_bike_path %>
-
-        <div class="footer">
-          <div class="footer-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <div class="footer-copyright">
-            This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-          </div>
+  <div class="title">
+    <h1>Available Bikes</h1>
+    <p>Find the right bike for your needs.</p>
+  </div>
+  <div class="cards-grid">
+    <% @bikes.each do |bike| %>
+      <div class="card" style="width: 18rem;">
+        <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-title">
+          <h3><%= bike.model %></h3>
+          <p>Rented by: <%= bike.user.first_name %></p>
         </div>
+        <div class="card-body">
+          <p>Condition: <%= bike.condition %> </p>
+          <p>Price: <%= bike.price %> EUR / month</p>
+          <%= link_to 'More details', bike_path(bike) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
