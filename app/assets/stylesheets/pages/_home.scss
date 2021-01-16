@@ -20,6 +20,45 @@ h1, h2, h3, h4 {
   margin: 40px 0 40px 0;
 }
 
+.container {
+  border :1px solid red;
+  padding:10px;
+  margin-top:10%;
+}
+
+  .img {
+width : 50%;
+  }
+
+  .description-all {
+    justify-content: space-between;
+    opacity: 0.7;
+    border: 0px solid black;
+    text-align: center;
+    border-radius: 10px;
+    font-size:auto;
+    background: red;
+    line-height: 3.4em;
+    color: white;
+    width: 20%;
+
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  a:link {
+     color: #333333;
+}
+a:visited {
+     color: #FFFFFF;
+}
+a:hover {
+     color: #CCCCCC;
+}
+a:active {
+     color: #333333;
+}
+
 
 
   // span {
