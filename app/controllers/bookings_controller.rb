@@ -9,12 +9,13 @@ class BookingsController < ApplicationController
     end
 
     def show
+      @bike = Bike.find(params[:bike_id])
       @booking = Booking.find(params[:id])
     end
 
     def new
       @bike = Bike.find(params[:bike_id])
-      @booking = Booking.new
+      @booking = @bike.bookings.build
     end
 
     def create
@@ -23,7 +24,7 @@ class BookingsController < ApplicationController
       @booking.bike = @bike
       @booking.user = current_user
       @booking.save
-      redirect_to bike_bookings_path(@bike)
+      redirect_to bike_booking_path(@bike, @booking)
     end
 
     private
