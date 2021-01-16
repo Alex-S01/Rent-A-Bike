@@ -19,6 +19,7 @@
           <p>Condition: <%= bike.condition %> </p>
           <p>Price: <%= bike.price %> EUR / month</p>
           <%= link_to 'More details', bike_path(bike) %>
+          <%= link_to 'Book now!', new_bike_booking_path(bike) %>
         </div>
       </div>
     <% end %>
