@@ -1,8 +1,13 @@
-<div class="container">
+<div class="bike-index-container">
+
+
   <div class="title">
-    <h1>Available Bikes</h1>
+    <h1>Available <span style="background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
     <p>Find the right bike for your needs.</p>
+
   </div>
+
+<div class="col-md-auto">
   <div class="cards-grid">
     <% @bikes.each do |bike| %>
     <div class="card" style="width: 18rem;">
@@ -13,17 +18,19 @@
       <% end %>
 
       <div class="card-title">
+        <br/>
         <h3><%= bike.model %></h3>
       </div>
       <div class="card-body">
         <p>Condition: <%= bike.condition %> </p>
         <p>Price: <%= bike.price %> EUR / month</p>
-        <%= link_to 'More details', bike_path(bike) %>
-        <%= link_to 'Book now!', new_bike_booking_path(bike) %>
+        <%= link_to 'More details', bike_path(bike), :class  => "btn btn-info", :style => "font-size: 12px; border-radius:10px; width: 120px; background:white;opacity:0.9" %>
+        <%= link_to 'Book now!', new_bike_booking_path(bike), :class  => "btn btn-info", :style => "font-size: 12px; border-radius:10px; width: 120px;  background:rgba(250,0,0,0.7);color: white;"%>
       </div>
     </div>
     <% end %>
   </div>
+</div>
 </div>
 
 <div class="footer">
@@ -41,4 +48,5 @@
     </div>
   </div>
 </div>
+
 
