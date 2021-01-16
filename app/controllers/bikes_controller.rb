@@ -13,8 +13,13 @@ class BikesController < ApplicationController
 
     def create
       @bike = Bike.new(bike_params)
-      @bike.save
-      redirect_to bike_path(@bike)
+      @bike.user = current_user
+      if
+        @bike.save
+        redirect_to bikes_path
+      else
+        render :new
+      end
     end
 
     private
