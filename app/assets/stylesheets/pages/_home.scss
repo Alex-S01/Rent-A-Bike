@@ -55,18 +55,6 @@ width : 50%;
     flex-direction: column;
   }
 
-  a:link {
-     color: #333333;
-}
-a:visited {
-     color: #FFFFFF;
-}
-a:hover {
-     color: #CCCCCC;
-}
-a:active {
-     color: #333333;
-}
 
 .blog-section {
   margin: 24px 0 24px 0;
@@ -80,12 +68,14 @@ a:active {
 
 .footer {
 
+
   margin: 0 auto;
   padding: 20px;
   background: transparent;
   background-size: cover;
-  color: white;
   height: 20vh;
+
+
 }
 
 .footer-copyright {
@@ -93,6 +83,7 @@ a:active {
   justify-content: space-evenly;
   align-items: center;
   color:black;
+
 }
 
 .footer-links {
@@ -100,11 +91,14 @@ a:active {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color:red;
+
+
 }
 
 .footer-links .social-links {
   text-decoration: none;
+
+
 }
 
 // DEVISE CSS
