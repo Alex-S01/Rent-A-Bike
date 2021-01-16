@@ -6,7 +6,12 @@
   <div class="cards-grid">
     <% @bikes.each do |bike| %>
       <div class="card" style="width: 18rem;">
-        <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
+        <% if bike.photo.attached? %>
+           <%= cl_image_tag bike.photo.key, width: 286, height: 214, crop: :fill %>
+        <% else %>
+          <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
+        <% end %>
+      
         <div class="card-title">
           <h3><%= bike.model %></h3>
           <p>Owner: <%= bike.user.first_name %></p>
