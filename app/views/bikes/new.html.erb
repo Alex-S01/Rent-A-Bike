@@ -1,18 +1,28 @@
 <div class="container">
-<%= simple_form_for(@bike) do |f| %>
+  <div class="new-bike-form">
+    <h1>Add your bike to the platform</h1>
+    <p>Enter your bike's details to start renting your bike to other members of Rentabike's community and start earning 💲💲💲</p>
+    
+    <div class="container-new-form">
+      <%= simple_form_for(@bike) do |f| %>
 
-<%= f.label :model, "Enter the name of the model"%>
-  <%= f.text_field :model %>
+        <div class="form-inputs">
+          <%= f.label :model, "Enter the name of your bike model"%>
+          <%= f.text_field :model %>
 
-  <%= f.label : condition, "Describe the condition of the bikes"%>
-  <%= f.text_field :condition %>
+          <%= f.label :condition, "What condition is your bike in?"%>
+          <%= f.text_field :condition %>
 
 
-  <%= f.label :price, "Enter the price"%>
-  <%= f.number_field :price %>
+          <%= f.label :price, "Enter the rental price per month for your bike"%>
+          <%= f.number_field :price %>
+        </div>
 
-  <%= f.submit %>
-
-<% end %>
+        <div class="form-actions">
+          <%= f.submit %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
 
