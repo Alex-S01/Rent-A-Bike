@@ -5,7 +5,7 @@
     <p>Check our availabilities</p>
       <div class="container-new-form">
         <div class="form-inputs">
-          <%= simple_form_for(@booking, :url => bike_bookings_path, :method => :post) do |f| %>
+          <%= simple_form_for(@booking, url: bike_bookings_path(bike_id: @bike.id), :method => :post) do |f| %>
             <%= f.input :start_date %>
             <%= f.input :end_date %>
         </div>

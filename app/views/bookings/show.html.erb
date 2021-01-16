@@ -3,8 +3,8 @@
     <div class="booking-input">
       <p><%= @booking.start_date%></p>
       <p><%= @booking.end_date %></p>
-        <%= link_to 'New Booking', new_bike_booking_path(@bike) %>
-        <%= link_to 'Back', bike_bookings_path(@bike) %>|
+        <%= link_to 'New Booking', new_bike_booking_path(@booking.bike_id) %>
+        <%= link_to 'Back', bike_bookings_path(@booking.bike_id) %>|
       </div>
     </div>
   </div>
