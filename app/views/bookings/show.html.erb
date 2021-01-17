@@ -1,15 +1,16 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="booking-input">
-      <p><%= @booking.start_date%></p>
-      <p><%= @booking.end_date %></p>
-        <%= link_to 'New Booking', new_bike_booking_path(@booking.bike_id) %>
-        <%= link_to 'Back', bike_bookings_path(@booking.bike_id) %>|
-      </div>
+      <p>Your Booking ID: <%=@booking.id%></p>
+      <p>Bike Model: <%= @booking.bike.model %></p>
+      <p>Bike condition: <%= @booking.bike.condition %></p>
+      <p>Rental start date: <%=@booking.start_date%></p>
+      <p>Rental end date: <%=@booking.end_date%></p>
+
+      <p>Rented by: <%= @booking.bike.user.first_name %> </p>
+      <p>Price: <%= @booking.bike.price %> </p>
+
+      <%= link_to 'Back', bike_bookings_path(@booking.bike_id) %>|
     </div>
   </div>
-
-
-
-
-
+</div>
