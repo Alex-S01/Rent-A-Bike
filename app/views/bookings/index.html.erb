@@ -7,8 +7,10 @@
       <% @bookings.each do |booking| %>
         <div class="card" style="width: 18rem;">
           <div class="body">
-            <p><%=booking.start_date%></p>
-            <p><%=booking.end_date%></p>
+            <p>Your Booking ID: <%=booking.id%></p>
+            <p><%= booking.bike.model %></p>
+            <p>Rental start date: <%=booking.start_date%></p>
+            <p>Rental end date: <%=booking.end_date%></p>
             <%= link_to 'More details', booking_path(booking) %>
         </div>
       </div>

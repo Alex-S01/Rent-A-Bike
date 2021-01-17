@@ -14,7 +14,9 @@
     <div> Some details about this bike</div>
 <br/>
 <div>
-  <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-info", :style => "font-size: 24px; border-radius:10px; width:200px" %>
+  <% if @bike.user != current_user %>
+    <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-info", :style => "font-size: 24px; border-radius:10px; width:200px" %>
+  <% end %>
 </div>
 
 <br/>
