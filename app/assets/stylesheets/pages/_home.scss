@@ -16,14 +16,51 @@ h1 {
   margin-top: 100px;
   margin-bottom: 8px;
 }
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.banner h1 {
+  color: white;
+}
+
+.banner p {
+  color: white;
+  opacity: .7;
+  font-size: 20px;
+}
+.cards-inside {
+  width: 600px;
+  margin: auto;
+}
+
 
 .cards-home {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 40px 0 40px 0;
+  text-align:center;
 }
 
+.pages a{
+position:relative;
+  margin :20px;
+  justify-content:center;
+  text-align: center;
+  font-size: 16px;
+  margin-top:120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 0 40px 0;
+}
+
+img :hover {
+opacity:1;
+}
 
 .container {
 
