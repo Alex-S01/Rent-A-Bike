@@ -1,34 +1,59 @@
 <div class="container">
+
+  <div class ="description-new">
+
+    <div class = "model name" style="font-size:50px;"><%= @bike.model%> </div>
+    <br/>
+    <div class = "descrition-one detail" style="font-size:32px;"><h2 style="font-size:36px">Want to RentYourBike ?</h2><br/>
+     Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning 💲💲💲
+
+    </div>
+
+
+
+    <br/>
+    <br/>
+
+
+  </div>
+
   <div class="form">
-    <h1>Add your bike to the platform</h1>
-    <p>Enter your bike's details to start renting your bike to other members of Rentabike's community and start earning 💲💲💲</p>
+    <h1>..just add your bike to the platform !</h1>
 
     <div class="container-new-form">
       <%= simple_form_for(@bike) do |f| %>
 
-        <%= f.error_notification %>
+      <%= f.error_notification %>
 
-        <div class="form-inputs">
-          <%= f.label :model, "Enter the name of your bike model"%>
-          <%= f.text_field :model %>
+      <div class="form-inputs">
+        <%= f.label :model, "Enter the name of your bike model"%>
+        <%= f.text_field :model, :class => "form-control" %>
 
-          <%= f.label :condition, "What condition is your bike in?"%>
-          <%= f.text_field :condition %>
+        <br/>
 
+        <%= f.label :condition, "What condition is your bike in?"%>
+        <%= f.text_field :condition, :class => "form-control" %>
 
-          <%= f.label :price, "Enter the rental price per month for your bike"%>
-          <%= f.number_field :price %>
+        <br/>
+        <%= f.label :price, "Enter the rental price per month for your bike"%>
+        <%= f.number_field :price, :class => "form-control" %>
 
-          <%= f.input :photo, as: :file %>
-        </div>
+        <br/>
 
-        <div class="form-actions">
-          <%= f.submit %>
-        </div>
+        <%= f.input :photo, as: :file, :class => "form-control" %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit %>
+      </div>
       <% end %>
     </div>
   </div>
+
+
 </div>
+
+
 
 <div class="footer">
   <div class="footer-copyright">
