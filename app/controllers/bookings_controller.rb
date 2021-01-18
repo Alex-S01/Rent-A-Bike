@@ -26,9 +26,32 @@ class BookingsController < ApplicationController
       redirect_to bike_booking_path(@bike, @booking)
     end
 
+    def edit
+      @bike = Bike.find(params[:bike_id])
+      @booking = Booking.find(params[:id])
+    end
+
+    def update
+      @bike = Bike.find(params[:bike_id])
+      @booking = Booking.find(params[:id])
+      @booking.bike = @bike
+      
+      @booking.update(booking_params)
+    
+      redirect_to booking_path(@booking)
+    end
+
+    def destroy
+      @booking = Booking.find(params[:id])
+      @booking.destroy
+
+      redirect_to bookings_path
+    end
+
     private
 
     def booking_params
       params.require(:booking).permit(:start_date, :end_date)
     end
+
 end

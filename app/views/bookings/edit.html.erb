@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="form">
+    <h1>Edit your booking for the bike "<%= @bike.model %>"</h1>
+    <%= link_to 'Back', booking_path %>
+    <h3>Price: <%= @bike.price %> / month.</h3>
+    <p>Your chosen dates</p>
+      <div class="container-new-form">
+        <div class="form-inputs">
+          <%= simple_form_for(@booking, url: bike_bookings_path(bike_id: @bike.id), method: :post) do |f| %>
+            <%= f.input :start_date %>
+            <%= f.input :end_date %>
+        </div>
+              <div class="form-actions">
+            <%= f.submit %>
+              </div>
+          <% end %>
+    </div>
+  </div>
+</div>
+
+
