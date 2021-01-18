@@ -1,7 +1,11 @@
+
+<br/><br/>
+<br/><br/>
+
 <div class="bike-index-container">
 
 
-  <div class="title">
+  <div class="index-title">
     <h1>Available <span style="background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
     <p>Find the right bike for your needs.</p>
 
@@ -12,7 +16,7 @@
     <% @bikes.each do |bike| %>
     <div class="card" style="width: 18rem;">
       <% if bike.photo.attached? %>
-      <%= cl_image_tag bike.photo.key, width: 286, height: 214, crop: :fill %>
+
       <% else %>
       <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
       <% end %>

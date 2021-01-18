@@ -1,14 +1,13 @@
 <div class="home-banner">
-  <div class="inner-container">
-    <h1><span>Mobility made easy.</span></h1>
-    <div class="text-container">
-      <p><span>Find quality bikes for rent in your city!</span></p>
-    </div>
-    <%= link_to "Discover Rentabike ", root_path(anchor: "how-it-works"), :class  => "btn btn-info", :style => "font-size: 54px; border-radius:10px; width: 220px; transition:0.5s; background:rgba(25,250,20,0.7);color:rgba(250,0,0,0.9);"%>
+  <div class="title-home"><span>Mobility made easy.</span></div>
+  <div class="inner-container" >
+    <p><span>Find quality bikes for rent in your city!</span></p>
+
+    <%= link_to "Discover Rentabike ", root_path(anchor: "how-it-works"), :class  => "btn btn-info", :style => "font-size: 34px; border-radius:10px; width: 220px; transition:0.5s; background:rgba(25,50,20,0.7);color:rgba(250,230,0,0.7);"%>
   </div>
 </div>
 <div>
-  <h1>Because we think <span class="badge bg-primary">Eco-friendly</span></h1>
+  <h1>Because we think <span class="badge bg-primary" style="background:green">Eco-friendly</span></h1>
   <h2>Because we want to stay <span class="badge bg-primary" style=background:black;">Fit</span></h2>
   <h3>and find in the corner the bike that fits our <span class="badge bg-primary">wishes </span></h3>
   <h4>to help you for transport or <span class="badge bg-primary"> pleasure</span></h4>
@@ -22,102 +21,106 @@
       <a class="btn-primary" href="#">Apply now!</a>
     </div>
   </div> -->
-<div class="container" id="how-it-works">
-  <h2>How Rentabike works 🚲</h2>
-  <div class="cards-home">
-    <div class="card-search" style="width: 18rem;">
-      <h4 class="card-title">Search <i class="fas fa-search"></i></h4>
-      <p class="card-text"> <strong>Hey! Our map and filters help you easily find the bike that best fits your needs and taste. <br/></strong>
-        <br/>
-        <img src="assets/gmaps.jpg" style="width:300px;opacity:0.8">
-      </div>
-
+  <div class="container" id="how-it-works">
+    <h2>How Rentabike works 🚲</h2>
+    <div class="cards-home">
       <div class="card-search" style="width: 18rem;">
-        <h4 class="card-title">Book <i class="fas fa-shopping-basket"></i></h4>
-        <p class="card-text"><strong>Get in touch with one of our verified users and book their bike for a determined duration and price.<br/></strong>
+        <h4 class="card-title">Search <i class="fas fa-search"></i></h4>
+        <p class="card-text"> <strong>Hey! Our map and filters help you easily find the bike that best fits your needs and taste. <br/></strong>
           <br/>
-          <img src="assets/key.jpg" style="width:300px;opacity:0.4">
+          <img src="assets/gmaps.jpg" style="width:300px;opacity:0.9">
         </div>
 
         <div class="card-search" style="width: 18rem;">
-          <h4 class="card-title">Ride! <i class="fas fa-search"></i></h4>
-          <p class="card-text"> <strong>To work or to adventures, enjoy your bike time!<br/></strong>
+          <h4 class="card-title">Book <i class="fas fa-shopping-basket"></i></h4>
+          <p class="card-text"><strong>Get in touch with one of our verified users and book their bike for a determined duration and price.<br/></strong>
+            <br/>
+            <img src="assets/key.jpg" style="width:300px;opacity:0.9">
+          </div>
+
+          <div class="card-search" style="width: 18rem;">
+            <h4 class="card-title">Ride! <i class="fas fa-search"></i></h4>
+            <p class="card-text"> <strong>Congratulations ! You are finally ready for some nice bike time. Leave your comment!<br/></strong>
+              <br/>
+
+
+
+              <img src="assets/ride.jpg" style="width:300px; height :300px; opacity:0.9">
+            </div>
+          </div>
+        </div>
+
+        <div class="banner" style="background:rgba(250,250,250,1)">
+          <div class="banner-content-home"><br/>
+            <div><h2>Get 20% off of your first booking!</h2></div>
             <br/>
 
+            <div><%= link_to "Check our available bikes", bikes_path(anchor: "availablebikes"), :class  => "btn btn-info",
+            :style => "z-index:10; font-size: 24px; border-radius:10px; width: 400px; transition:0.5s; background:rgba(25,50,20,0.7);
+            color:rgba(250,230,0,0.7);"%></div>
 
-
-            <img src="assets/ride.jpg" style="width:300px; height :350px; opacity:0.4">
+            <div><img src="assets/bikedrawing"></div>
           </div>
         </div>
-      </div>
 
-      <div class="banner-try-now">
-        <div>
-          <h2>Get 20% off your first booking!</h2>
-          <p>View all the bikes available near you.</p>
-        </div>
-        <div>
-          <%= link_to "Discover our available bikes", bikes_path, class: "btn-white" %>
-        </div>
-      </div>
+        <div class="container-blog">
+          <div class="blog-section">
+            <h3>Read our latest blog articles 🚲 <small><i class="fas fa-chevron-down"></i></small></h3>
+            <div class="d-flex justify-content-around">
 
+              <div class="card" style="width: 18rem;">
 
-      <div class="container">
-        <div class="blog-section">
-          <h3>Read our latest blog articles 🚲 <small><i class="fas fa-chevron-down"></i></small></h3>
-          <div class="d-flex justify-content-around">
-
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/playboybike.jpg" class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title" style="text-align: left; font-weight: bold;">How Lucas used Rentabike to save money</h5>
-                <p class="card-text">He saved money to buy the bike and the trip of his dream ...</p>
-                <a href="#" class="btn btn-primary">Read more</a>
+                <img src="/assets/playboybike.jpg" class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: left; font-weight: bold;">How Lucas used Rentabike to save money</h5>
+                  <p class="card-text">He saved money to buy the bike and the trip of his dream ...</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-              <img src="/assets/artyguidon.jpg" class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title" style="text-align: left; font-weight: bold;">Is renting a bike really worth it?</h5>
-                <p class="card-text">When you are looking for a new bike, you can find many ways to ...</p>
-                <a href="#" class="btn btn-primary">Read more</a>
+              <div class="card" style="width: 18rem;">
+                <img src="/assets/artyguidon.jpg" class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: left; font-weight: bold;">Is renting a bike really worth it?</h5>
+                  <p class="card-text">When you are looking for a new bike, you can find many ways to ...</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-              <img src=/assets/bikebxl.jpg class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title" style="text-align: left; font-weight: bold;">Rentabike services citizens of Brussels</h5>
-                <p class="card-text">Rentabike's service is helping citizens across Brussels ...</p>
-                <a href="#" class="btn btn-primary">Read more</a>
+              <div class="card" style="width: 18rem;">
+                <img src=/assets/bikebxl.jpg class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: left; font-weight: bold;">Rentabike services citizens of Brussels</h5>
+                  <p class="card-text">Rentabike's service is helping citizens across Brussels ...</p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class
-      <div class="pages">
-        <a href="#">How we work</a> | <a href="#">Confidentiality</a> | <a href="Our Guidelines">Our guidelines</a> | <a href="#">Invite friends</a>
-        <a href="#">How we work</a> | <a href="#">Confidentiality</a> | <a href="Our Guidelines">Our guidelines</a> | <a href="#">Invite friends</a>
-        <a href="#">How we work</a> | <a href="#">Confidentiality</a>
 
-      </div>
+        <div class="pages">
+          <a href="#">How we work</a> | <a href="#">Confidentiality</a> | <a href="Our Guidelines">Our guidelines</a> | <a href="#">Invite friends</a>
+          <a href="#">How we work</a> | <a href="#">Confidentiality</a> | <a href="Our Guidelines">Our guidelines</a> | <a href="#">Invite friends</a>
+          <a href="#">How we work</a> | <a href="#">Confidentiality</a>
 
-      <div class="footer">
-        <div class="footer-copyright">
-          <div>This website is made with <i class="fas fa-heart"></i> by Lucas, Sebastien and Alex </div>
         </div>
 
-        <div class="footer-links">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        <div class="footer">
+          <div class="footer-copyright">
+            <div>This website is made with <i class="fas fa-heart"></i> by Lucas, Sebastien and Alex </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
 
