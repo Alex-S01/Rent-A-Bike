@@ -1,12 +1,11 @@
-<div class="container">
+<div class="container-newbike">
 
   <div class ="description-new">
 
-    <div class = "model name" style="font-size:50px;"><%= @bike.model%> </div>
     <br/>
-    <div class = "descrition-one detail" style="font-size:32px;"><h2 style="font-size:36px">Want to RentYourBike ?</h2><br/>
-     Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning 💲💲💲
-
+    <div class = "description-onedetail" style="font-size:32px;color:white;opacity:0.9;"><h2 ><br/><br/><br/>Want to RentYourBike ?</h2>
+      <p style="font-size:24px; opacity:0.8"><br/>Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning <span id="dollar">💲💲💲
+</span></p>
     </div>
 
 
@@ -18,8 +17,8 @@
   </div>
 
   <div class="form">
-    <h1>..just add your bike to the platform !</h1>
-
+    <h2>..just add your bike to the platform !</h2>
+<br/><br/>
     <div class="container-new-form">
       <%= simple_form_for(@bike) do |f| %>
 
