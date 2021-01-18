@@ -1,0 +1,28 @@
+<div class="show-container">
+
+    <h1>My bikes</h1>
+
+
+    <% @bikes.each do |bike| %>
+      <p><%= bike.model if bike.user == current_user %></p>
+    <% end %>
+
+    
+
+<div class="footer">
+  <div class="footer-copyright">
+    <div>This website is made with <i class="fas fa-heart"></i> by Lucas, Sebastien and Alex </div>
+  </div>
+
+  <div class="footer-links">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+
