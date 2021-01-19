@@ -7,7 +7,7 @@ class BikesController < ApplicationController
         model @@ :query \
         OR condition @@ :query \
         "
-        @bikes = Bike.where(sql_query, query: "%#{params[:query]}%")
+        @bikes = Bike.where(sql_query, query:  "%#{params[:query]}%")
       else
         @bikes = Bike.all
       end
