@@ -2,7 +2,6 @@
 body {
   color: black;
   font-family: Nunito, sans-serif;
-  background:grey lighter;
 }
 
 .banner-content-home {
@@ -13,22 +12,40 @@ body {
 
 }
 
-.banner-content-home div img {
+.b {
+background:green;
+border-radius:3px;
+padding:2px;
+}
+
+.banner-content-home
+ { background:rgba(0,20,30,0.9);
+  margin:5%;
+  padding:5px;
+ }
+
+ .banner-content-home div {
 
 width:350px;
-opacity:0.7;
+opacity:1;
 margin :0 auto;
+
 }
 
 .banner-content-home h2 {
-color:grey;
+color:white;
+opacity:0.8;
 }
 
 .banner-content-home p {
-  opacity: 0.1;
+
   font-size: 20px;
   color:black;
 }
+
+
+
+
 
 .blog-section {
   margin: 24px 0 24px 0;
@@ -41,18 +58,58 @@ color:grey;
 .btn :hover {
 opacity:0.9;
 }
-.cards-home {
+
+.book-pic {
+background-image: asset-url('book.png');
+width:280px;
+height:254px;
+border-radius:10px;
+margin:0 auto;
+border: 1px solid white;
+}
+
+.card-1 {
+
+background-image: asset-url('playboybike.jpg');
+width:17.5rem;
+height: 170px;
+border-radius:10px;
+margin:0 auto;
+}
+.card-2 {
+
+background-image: asset-url('vacs2.jpg');
+width:18rem;
+
+border-radius:10px;
+margin:0 auto;
+}
+.card-3 {
+
+background-image: asset-url('bikebxl.jpg');
+width:18rem;
+
+border-radius:10px;
+margin:0 auto;
+}
+
+.cards-how-it-works {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 40px 0 40px 0;
+  text-align:center;
+  border:1px solid black;
+  color:white;
+  padding:15px;
+
+}
+
+.card-title {
   text-align:center;
 }
 
-.cards-inside {
-  width: 600px;
-  margin: auto;
-}
+
+
 
 h1, h2, h3, h4 {
   font-family: Helvetica, sans-serif;
@@ -60,17 +117,44 @@ h1, h2, h3, h4 {
 
   text-align: center;
 }
-.container {
 
-  padding:10px;
-  margin-top:10%;
+.r {
+  background:rgba(250,0,0,0.7);
+  border-radius:3px;
+  padding:4px;
 }
+
+.home-container {
+
+
+  margin-top:10%;
+  width:80%;
+  text-align:center;
+  margin:0 auto;
+  padding:20px;
+  background:rgba(0,20,30,0.9);
+  color:rgba(250,0,0,0.7);
+  border-radius:10px;
+
+}
+
+.cards-search {
+background-image: asset-url('key.jpg');
+}
+
 .container-blog {
  padding:10px;
-  margin-top:10%;
+
 }
 
-
+.search-pic {
+background-image: asset-url('gmaps.jpg');
+width:280px;
+height:254px;
+border-radius:10px;
+margin:0 auto;
+border:1px solid white;
+}
 
 .inner-container {
   transform: translate(150px,-20px);
@@ -84,6 +168,18 @@ h1, h2, h3, h4 {
 
 .pages{
 text-align:center;
+margin-top:1rem;
+}
+
+
+.ride-pic {
+background-image: asset-url('artyguidon.jpg');
+width:280px;
+height:254px;
+border-radius:10px;
+margin:0 auto;
+border:1px solid white;
+
 }
 // DEVISE CSS
 
