@@ -4,16 +4,15 @@
     <h3>Price: <%= @bike.price %> / month.</h3>
     <p>Check our availabilities</p>
       <div class="container-new-form">
-        <div class="form-inputs">
-          <%= simple_form_for([@bike, Booking.new]) do |f| %>
-            <%= f.input :start_date %>
-            <%= f.input :end_date %>
-        </div>
-          <div class="form-actions">
-            <%= f.button :submit, class: "btn btn-main" %>
 
+        <%= simple_form_for([@bike, Booking.new]) do |f| %>
+          <%= f.input :start_date, as: :date, html5: true  %>
+          <%= f.input :end_date, as: :date, html5: true  %>
+          <div class="buttons">
+            <%= f.button :submit, class: "btn btn-main" %>
           </div>
-          <% end %>
+
+        <% end %>
     </div>
   </div>
 </div>

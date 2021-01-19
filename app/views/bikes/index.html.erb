@@ -4,6 +4,17 @@
 
 <div class="bike-index-container">
 
+  <div class ="search-bar form-inline">
+      <%= form_tag bikes_path, method: :get do %>
+      <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Search for a bike"
+      %>
+      <%= submit_tag "Search", class: "btn btn-primary", id:"search-button" %>
+    <% end %>
+  </div>
+
 
   <div class="index-title">
     <h1>Available <span style="background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
