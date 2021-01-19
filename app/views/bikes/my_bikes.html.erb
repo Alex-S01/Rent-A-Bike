@@ -4,7 +4,11 @@
 
 
     <% @bikes.each do |bike| %>
-      <p><%= bike.model if bike.user == current_user %></p>
+      <div>
+        <p><%= bike.model if bike.user == current_user %> <%= link_to "View bike", bike_path(bike) %> <%= link_to "View bookings", bike_bookings_path(bike) %></p>
+        <p>You have <%= bike.bookings.count %> bookings for this bike</p>
+      </div>
+      
     <% end %>
 
     
