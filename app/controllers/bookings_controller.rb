@@ -4,7 +4,7 @@ class BookingsController < ApplicationController
       if @bike.present?
         @bookings = @bike.bookings
       else
-        @bookings = Booking.all
+        @bookings = current_user.bookings
       end
     end
 
@@ -14,7 +14,6 @@ class BookingsController < ApplicationController
 
     def new
       @bike = Bike.find(params[:bike_id])
-      @booking = @bike.bookings.build
     end
 
     def create
@@ -23,7 +22,7 @@ class BookingsController < ApplicationController
       @booking.bike = @bike
       @booking.user = current_user
       @booking.save
-      redirect_to bike_booking_path(@bike, @booking)
+      redirect_to bookings_path
     end
 
     def edit
@@ -38,7 +37,7 @@ class BookingsController < ApplicationController
       
       @booking.update(booking_params)
     
-      redirect_to booking_path(@booking)
+      redirect_to bookings_path
     end
 
     def destroy
