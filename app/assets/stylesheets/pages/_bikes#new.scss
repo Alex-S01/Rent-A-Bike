@@ -1,25 +1,36 @@
+
 .container-new-form {
   padding: 48px;
   margin:0 auto;
   height: auto;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
   border-radius: 10px;
-  background: rgba(220, 240,240,0.1);
+  background: rgba(0,0,0,0.7);
+  background-position:right;
+
   max-width: 500px;
   width:100%;
+  color:white;
+  margin-left:10%;
 
 }
+
 .container-newbike {
 
   display:flex;
   justify-content: space-around;
   padding:120px;
-  width:95.5%;
+  width:100%;
   margin:auto;
   text-align:center;
   border:3px dashed black;
-
+  background:asset-url('dark.jpg');
+  background-size:cover;
+  margin-top:20px;
+// background: -webkit-gradient(linear, left top, right top, from(rgba(250,0,0,0.7))), to(rgba(0,0,0,0.8));
+//     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(250,0,0,0.7));
 }
+
 
 .description-onedetail {
 
@@ -34,7 +45,7 @@
   text-align: center;
   border-radius: 10px;
   font-size:auto;
-  background:rgba(0,20,30,0.9);
+  background: rgba(0,10,20,0.9);
   line-height: 3.3em;
   color: rgba(250,0,0,0.7);
   width: 45%;
@@ -44,7 +55,6 @@
 }
 
 .container-newbike h1 {
-  background: rgba(220, 240,240,0.3);
   color:black;
   margin-bottom:60px;
   margin-top:-65px;
@@ -56,7 +66,7 @@
 }
 
 label {
-color: rgba(50, 100,150,1);
+color: rgba(250,250,240,1);
 width:auto;
 text-align:center;
 display:flex;
