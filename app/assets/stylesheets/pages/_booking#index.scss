@@ -1,0 +1,15 @@
+
+.page-content {
+
+  background: asset-url('BannerPS.png');
+  background-size:cover;
+
+}
+
+.container-indexbooking {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap:16px;
+margin-top:100px;
+
+}
