@@ -1,7 +1,11 @@
 body {
-    background: rgba(10,10,20,0.9);
-}
+    // background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.5)), to(rgba(220,0,250,0.3)));
+    // background: linear-gradient(to right, rgba(200,0,250,0.1), rgba(0,0,0,0.5));
+     background:asset-url('bannerps.jpg');
+     background-size:cover;
+     height:1200px;
 
+}
 #page-content {
 
 transform:translate(0px,200px);
