@@ -29,7 +29,8 @@ end
         user: User.find(rand((User.first.id)..(User.last.id))),
         model: Faker::Vehicle.model,
         condition: %w[new very_good good].sample,
-        price: Faker::Commerce.price
+        price: Faker::Commerce.price,
+        address: Faker::Address.full_address
     )
 
     puts "Bike #{bike.id} is created"
