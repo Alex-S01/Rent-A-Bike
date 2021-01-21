@@ -1,16 +1,27 @@
 // Specific CSS for your home-page
-body {
-  color: black;
-  font-family: Nunito, sans-serif;
-   background: white;
-    background: white;
-}
+
 
 .banner-content-home {
 
   background-size: cover;
   background:white;
   text-align:center;
+
+
+}
+
+.MessageBanner {
+  background:asset-url('bannerps.jpg');
+background-size:cover;
+height:1200px;
+opacity:0.9;
+
+}
+.MessageBanner :hover {
+  background:asset-url('bannerps.jpg');
+background-size:cover;
+height:1200px;
+opacity: 1;
 
 }
 

@@ -1,21 +1,23 @@
 <div class="home-banner">
-  <div class="title-home"><span>Mobility made easy.</span></div>
+  <div class="title-home"><span></span></div>
   <div class="inner-container" >
     <p><span>Find quality bikes for rent in your city!</span></p>
 
-    <%= link_to "Discover Rentabike ", root_path(anchor: "how-it-works"), :class  => "btn btn-info", :style => "font-size: 34px; border-radius:10px; width: 220px; transition:0.5s; background:rgba(25,50,20,0.7);color:rgba(250,230,0,0.7);"%>
+    <%= link_to "Discover Rentabike ", root_path(anchor: "how-it-works"), :class  => "btn btn-info", :style => "font-size: 34px; border-radius:150px; width: 220px; transition:0.5s;  background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+    background: linear-gradient(to right, #ee5a6f, #f29263); color:rgba(250,250,250,0.7);"%>
   </div>
 </div>
 
-<br><br><br>
-<div>
+
+<!-- <div style="color:white">
   <h1>Think <span class= "b"> Eco-friendly</span>,
-    <h2>Stay Fit,</h2>
+    <h2>Stay <span class= "b">Fit</span></h2>
     <br>
   <h3>Find the bike you wish</h3>
-  <h4>For transport or <span class="r"> pleasure</span></h4>
+  <h4>for transport or <span class="r"> pleasure</span></h4>
 
-</div>
+</div> -->
+<div class="MessageBanner"></div>
 
 <br><br><br>
 
@@ -60,7 +62,8 @@
         <br/>
 
         <%= link_to "Check our available bikes", bikes_path(anchor: "availablebikes"), :class  => "btn btn-info",
-        :style => "z-index:10; font-size: 24px; border-radius:10px; width: 400px; transition:0.5s; background:rgba(250,0,0,0.7);
+        :style => "z-index:10; font-size: 24px; border-radius:10px; width: 400px; transition:0.5s; background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+    background: linear-gradient(to right, #ee5a6f, #f29263);;
         color:white;"%>
       </div>
 
@@ -68,7 +71,7 @@
         <div class="blog-section">
 
 
-          <h3>Read our latest blog articles 🚲 <small><i class="fas fa-chevron-down"></i></small></h3>
+          <h3 style="color:white;">Read our latest blog articles 🚲 <small><i class="fas fa-chevron-down"></i></small></h3>
 
         <div class = "d-flex">
 
