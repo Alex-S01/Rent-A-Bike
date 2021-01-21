@@ -22,7 +22,6 @@ class BikesController < ApplicationController
             lng: bike.longitude
           }
         end
-        binding.pry
       end
     end
 
