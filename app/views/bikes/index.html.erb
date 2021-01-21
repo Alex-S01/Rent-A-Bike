@@ -41,7 +41,7 @@
 
 
           <% if bike.photo.attached? %>
-
+                 <%= cl_image_tag bike.photo.key, height: 300, width: 400, crop: :fill %>
           <% else %>
           <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
           <% end %>
