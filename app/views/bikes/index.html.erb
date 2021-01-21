@@ -36,6 +36,10 @@
       <div class="cards" style="border-top:10px solid red;text-align:center;margin:0 auto;">
         <% @bikes.each do |bike| %>
         <div class="card" style="width: 18rem; background: rgba(10,10,10,0.1);color:white;border:3px solid white">
+
+
+
+
           <% if bike.photo.attached? %>
 
           <% else %>
@@ -46,6 +50,9 @@
             <br/>
             <h3><%= bike.model %></h3>
           </div>
+
+
+
           <div class="card-body" style="background: rgba(250,250,250,0.9);color:black">
             <p>Owner: <%= bike.user.first_name %></p>
             <p>Condition: <%= bike.condition %> </p>
