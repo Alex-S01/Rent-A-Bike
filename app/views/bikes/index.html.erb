@@ -1,30 +1,23 @@
 
 
-<<<<<<< HEAD
-<div class="bike-index-container">
-
-  <div class ="search-bar form-inline">
-      <%= form_tag bikes_path, method: :get do %>
-      <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Search for a bike"
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary", id:"search-button" %>
-    <% end %>
-  </div>
+<div class="indexbike-container" >
 
 
-  <div class="index-title">
-    <h1>Available <span style="background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
-    <p>Find the right bike for your needs.</p>
-=======
-<div class="indexbike-container">
 <div class="search">
->>>>>>> 1192ee1ad545b8c13a0c039ecb9badc9e80b5547
 
-    <div class ="search-bar form-inline"> <h1 style="color:white;border:1px solid white"><br><br>Available <span style="color:black; background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
-    <p class="text-center" style="color:rgba(230,230,0,0.9)">Find the right bike for your needs.</p>
+    <div class ="search-bar form-inline">
+
+      <h1 id="titreindexbike" style="color:white; border:1px solid white;">
+
+        <br><br>
+
+        Available <span style="color:black; background:rgba(250,0,0,0.7);border-radius:5px">Bikes</span></h1>
+
+
+    <p class="text-center" style="color:black;">Find the right bike for your needs.</p>
+
+
+
   <%= form_tag bikes_path, method: :get do %>
   <%= text_field_tag :query,
   params[:query],
@@ -37,8 +30,9 @@
 <br/>
   </div>
 
-  <div class="content" style="background: -webkit-gradient(linear, left top, right top, from(rgba(230,0,0,0.1)), to(rgba(23,23,23,0.8)));
-    background: linear-gradient(to right, rgba(230,0,0,0.1), rgba(23,23,23,0.8));color:white">`
+  <div class="content">
+
+
       <div class="cards" style="border-top:10px solid red;text-align:center;margin:0 auto;">
         <% @bikes.each do |bike| %>
         <div class="card" style="width: 18rem; background: rgba(10,10,10,0.1);color:white;border:3px solid white">
