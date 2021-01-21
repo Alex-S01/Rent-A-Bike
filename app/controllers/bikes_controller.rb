@@ -8,8 +8,21 @@ class BikesController < ApplicationController
         OR condition @@ :query \
         "
         @bikes = Bike.where(sql_query, query:  "%#{params[:query]}%")
+        @markers = @bikes.geocoded.map do |bike|
+          {
+            lat: bike.latitude,
+            lng: bike.longitude
+          }
+        end
       else
         @bikes = Bike.all
+        @markers = @bikes.geocoded.map do |bike|
+          {
+            lat: bike.latitude,
+            lng: bike.longitude
+          }
+        end
+        binding.pry
       end
     end
 
