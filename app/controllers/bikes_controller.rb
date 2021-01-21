@@ -2,7 +2,28 @@ class BikesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
     def index
-      @bikes = Bike.all
+      if params[:query].present?
+        sql_query = "\
+        model @@ :query \
+        OR condition @@ :query \
+        "
+        @bikes = Bike.where(sql_query, query:  "%#{params[:query]}%")
+        @markers = @bikes.geocoded.map do |bike|
+          {
+            lat: bike.latitude,
+            lng: bike.longitude
+          }
+        end
+      else
+        @bikes = Bike.all
+        @markers = @bikes.geocoded.map do |bike|
+          {
+            lat: bike.latitude,
+            lng: bike.longitude
+          }
+        end
+        binding.pry
+      end
     end
 
     def show

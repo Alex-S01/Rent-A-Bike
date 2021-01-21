@@ -38,6 +38,10 @@
         <%= f.number_field :price, :class => "form-control" %>
 
         <br/>
+        <%= f.label :address, "Where can we rent your bike?"%>
+        <%= f.text_field :address, :class => "form-control", :id => "bike_address" %>
+
+        <br/>
 
         <%= f.input :photo, as: :file, :class => "form-control" %>
       </div>

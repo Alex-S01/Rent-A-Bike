@@ -22,14 +22,27 @@ puts "database is clean"
     puts "User #{user.id} is created"
 end
 
+addresses = [
+  'Kantersteen 12, 1000 Brussel',
+  'Tweedekkerstraat 126, 1130 Brussel',
+  'Sint-Lambertusstraat 200, 1200 Sint-Lambrechts-Woluwe',
+  'Boondaalsesteenweg 418, 1050 Elsene',
+  'Rogierlaan 51, 1030 Schaarbeek',
+  'Jean Joseph Crocqlaan 15, 1020 Brussel',
+  'Rue Marie Depage 1, 1180 Uccle',
+  'Wayezstraat 160-162, 1070 Anderlecht',
+  'Ter Platen 12, 9000 Gent',
+  'Gebroeders de Smetstraat 6, 9000 Gent'
+]
 
-10.times do
+10.times do |i|
     bike = Bike.create!(
       # user: User.find(rand(1..10)),
         user: User.find(rand((User.first.id)..(User.last.id))),
         model: Faker::Vehicle.model,
         condition: %w[new very_good good].sample,
-        price: Faker::Commerce.price
+        price: Faker::Commerce.price,
+        address: addresses[i]
     )
 
     puts "Bike #{bike.id} is created"
