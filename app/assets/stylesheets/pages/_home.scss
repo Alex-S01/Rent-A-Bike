@@ -3,6 +3,43 @@
 body{
   background:rgba(0,35,53,1);
 }
+
+
+
+
+
+.art1 {
+border:1px solid black;
+border-radius:10px;
+color:black;
+text-align:left;
+margin : 5px auto;
+box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+// text-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
+
+.art2 {
+border:1px solid black;
+border-radius:10px;
+color:black;
+text-align:left;
+margin : 5px auto;
+box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+// text-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
+
+.art3 {
+border:1px solid black;
+border-radius:10px;
+color:black;
+text-align:left;
+margin : 5px auto;
+box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+// text-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
 .banner-content-home {
 
 
@@ -37,7 +74,8 @@ padding:2px;
 .banner-content-home
  { background:rgba(0,20,30,0.9);
   margin:5%;
-  padding:5px;
+  padding:25px;
+  border-radius: 10px;
  }
 
  .banner-content-home div {
@@ -59,7 +97,12 @@ opacity:0.8;
   color:black;
 }
 
+.home-container p
 
+{
+  width:345px;
+  text-align:center;
+}
 
 
 
@@ -84,9 +127,39 @@ margin:0 auto;
 border: 1px solid white;
 }
 
-.card-1 {
+.articleimg1 {
 
 background-image: asset-url('playboybike.jpg');
+width:17.5rem;
+height: 170px;
+border-radius:10px;
+margin:0 auto;
+}
+.articleimg2 {
+
+background-image: asset-url('vacs2.jpg');
+width:17.5rem;
+height: 170px;
+border-radius:10px;
+margin:0 auto;
+}
+
+.articleimg3 {
+
+background-image: asset-url('bikebxl.jpg');
+width:17.5rem;
+height: 170px;
+border-radius:10px;
+margin:0 auto;
+}
+
+.containarticle
+{
+  justify-content: space-around;
+}
+
+.card-1 {
+background-image: asset-url('vacs2.jpg');
 width:17.5rem;
 height: 170px;
 border-radius:10px;
@@ -109,16 +182,26 @@ border-radius:10px;
 margin:0 auto;
 }
 
+.card-body {
+width:270px;
+}
+
 .cards-how-it-works {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   text-align:center;
   border:1px solid black;
   color:white;
   padding:15px;
 
+  margin: 24px 0 24px 0;
 }
+
+.cards-how-it-works h3 {
+  margin-bottom: 40px;
+}
+
 
 .card-title {
   text-align:center;
@@ -144,7 +227,7 @@ h1, h2, h3, h4 {
 
 
   margin-top:10%;
-  width:80%;
+  width:100%;
   text-align:center;
   margin:0 auto;
   padding:20px;
@@ -154,12 +237,36 @@ h1, h2, h3, h4 {
 
 }
 
+.card-search
+{
+width:18rem;
+color:white;
+
+}
+
+.card-book
+{
+width:18rem;
+color:white;
+}
+
+.card-ride
+{
+width:18rem;
+color:white;
+}
+
 .cards-search {
 background-image: asset-url('key.jpg');
+margin:auto;
 }
 
 .container-blog {
  padding:10px;
+ background:white;
+ width:80%;
+ margin:auto;
+ border-radius:10px;
 
 }
 
@@ -173,7 +280,9 @@ border:1px solid white;
 }
 
 .inner-container {
-  transform: translate(150px,-20px);
+  margin:0 auto;
+  width:200px;
+  transform:translate(0px,-200px);
 }
 .title-home {
   color:red;
@@ -203,18 +312,18 @@ border:1px solid white;
   margin-top: 88px;
 }
 
-  // span {
-    // background-color:red;
-    // border-radius :20px;
-    // padding: 10px;
-    // color:white;
-  // }
 
-// a {
-  // text-decoration :none;
-  // opacity :0.7;
-  // & :hover {
-    // opacity: 1;
-  // }
-// }
+
+@media(max-width: 768px) {
+  .banner-content-home {
+  }
+
+  }
+
+
+
+
+
+
+
 
