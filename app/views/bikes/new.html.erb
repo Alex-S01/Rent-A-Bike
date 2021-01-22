@@ -1,4 +1,4 @@
-<div class="container-newbike">
+<div class="container-newbike" id="booking">
 
 
 
@@ -12,22 +12,18 @@
         <p style="font-size:24px; opacity:0.8"><br/>Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning <span id="dollar">💲💲💲
         </span></p>
       </div>   <br/><br/>
-
-
     </div>
 
 
-
-
-
-
       <div class="form">
-        <h2 style="text-transform:uppercase; color:yellow; font-family: Montserrat, sans-serif; background:black; font-size:28px">..just add your bike to the platform !</h2>
-        <br/><br/>
+
 
 
 
         <div class="container-new-form">
+          <h2 class="imperatif" style="font-size: 35px; background:black;text-transform: uppercase; font-weight: 700; color: #ffc001;
+  margin: 0px; font-family: Montserrat, sans-serif;">Add your bike to the platform </h2>
+        <br/><br/>
           <%= simple_form_for(@bike) do |f| %>
 
           <%= f.error_notification %>
@@ -56,8 +52,10 @@
 
           <div class="form-actions">
             <%= f.submit %>
+
           </div>
          <% end %>
+          <br/>
         </div>
       </div>
 
