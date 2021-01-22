@@ -1,27 +1,204 @@
-.show-container {
-  padding-top:100px;
+.bikeshow-container {
+
+width:100%;
+margin-top:80px;
 }
 
-.img {
-  width : 50%;
-  border-radius:10px;
+
+.toutsaufimage
+
+{
+  display:flex;
+  justify-content:center;
 }
 
-.description-all {
-  justify-content: space-between;
+
+.bike-details{
+
+  border:1px solid white;
+  background:white;
+  width:30%;
+}
+
+.index-description-all {
+  width:30%;
+  justify-content: space-around;
   opacity: 0.7;
   border: 0px solid black;
   text-align: center;
-  border-radius: 10px;
+
   font-size:auto;
   background: red;
   line-height: 3.4em;
   color: white;
-  width: auto;
-  padding: 10px;
-  flex-direction: row;
+  padding: 20px;
+
+}
+
+.white-bg {
+  background:grey;
+  width:80%;
+  margin:0 auto;
+  padding:10px;
+  border-radius:10px;
 }
 
 
+
+
+
+
+@media (min-width: 100px) and (max-width: 564px) {
+
+.model name {
+  font-size:20px;
+}
+  .img {
+
+    width:100%;
+    height:auto;
+    margin:auto;
+  }
+  .toutsaufimage {
+   width:100%;
+  }
+  .bike-details{
+
+   width:50%;
+  }
+  .index-description-all {
+    width:50%;
+  }
+
+  .bikeshow-container
+  {
+    width:100%;
+    font-size:12px;
+
+
+  }
+
+  a{
+    width:66%;
+  }
+}
+
+@media (min-width: 565px) and (max-width: 855px) {
+  .img{
+    width:60%;
+    margin:auto;
+  }
+
+  .toutsaufimage
+  {
+    width:100%;
+    height: 410px;
+    margin:auto;
+
+  }
+
+  .bikeshow-container
+  {width:100%;
+
+  }
+
+
+
+  .white-bg {
+  background:transparent;
+  width:80%;
+  margin:0 auto;
+  padding:0px;
+  border-radius:10px;
+
+}
+
+}
+
+@media (min-width: 856px) and (max-width:989px) {
+
+   .bike-details {
+    display:none;
+   }
+   .white-bg {
+    background:white;
+
+}
+
+.bikeshow-container {
+  display:flex;
+  justify-content:center;
+  height:400px;
+  margin-top:200px;
+}
+.img {
+  width:600px;
+  height:400px;
+
+  align-items:center;
+}
+
+  .footer {
+    margin-top:200px;
+  }
+.toutsaufimage{
+  justify-content:space-between;
+  height:450px;
+  flex:1;
+  }
+
+.index-description-all {
+    width:100%;
+  }
+.bike-details{
+
+  border:1px solid black;
+  background:white;
+  width:50%;
+}
+}
+
+
+
+
+@media (min-width: 990px)  {
+
+.bikeshow-container {
+  display:flex;
+  justify-content:center;
+  height:400px;
+  margin-top:200px;
+}
+.img {
+  width:600px;
+  height:400px;
+
+  align-items:center;
+}
+#map {
+    width:33%;
+    height:450px;
+    padding:20px;
+  }
+
+  .footer {
+    margin-top:200px;
+  }
+.toutsaufimage{
+  justify-content:space-between;
+  height:450px;
+  flex:1;
+  }
+
+.index-description-all {
+    width:50%;
+  }
+.bike-details{
+
+  border:1px solid black;
+  background:white;
+  width:50%;
+}
+}
 
 
