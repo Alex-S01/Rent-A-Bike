@@ -1,25 +1,22 @@
 
 .container-new-form {
-  padding: 48px;
-  margin:0 auto;
-  height: auto;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+ opacity: 0.9;
+  border: 2px solid rgba(250,0,0,0.7);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
   border-radius: 10px;
-   background:rgba(0,35,53,0.9);
-  background-position:right;
-
-  max-width: 500px;
-  width:100%;
-  color:white;
-  margin-left:10%;
-
+  font-size:auto;
+  background: rgba(0,10,20,1);
+  line-height: 3.3em;
+  padding: 10px;
+  align-items:center;
+  height:auto;
 }
 
 .container-newbike {
 
   display:flex;
-  justify-content: space-around;
-  padding:120px;
+  justify-content: center;
   width:100%;
   margin:auto;
   text-align:center;
@@ -40,7 +37,7 @@
 // }
 .description-new {
 
-  justify-content: space-between;
+
   opacity: 0.9;
   border: 2px solid rgba(250,0,0,0.7);
   box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
@@ -49,10 +46,8 @@
   font-size:auto;
   background: rgba(0,10,20,1);
   line-height: 3.3em;
-  width: 45%;
   padding: 10px;
-  flex-direction: row;
-  align-items:center;
+
 
 }
 
@@ -73,6 +68,10 @@ width:auto;
 text-align:center;
 display:flex;
 font-size:18px;
+}
+
+.form-inputs{
+  padding:30px;
 }
 
 .form-control {

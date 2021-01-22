@@ -1,62 +1,68 @@
 <div class="container-newbike">
 
-  <div class ="description-new">
 
-    <br/>
-    <div class = "description-onedetail" style="font-size:32px;color:white;opacity:0.9;"><h2 ><br/><br/><br/>Want to RentYourBike ?</h2>
-      <p style="font-size:24px; opacity:0.8"><br/>Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning <span id="dollar">💲💲💲
-</span></p>
+
+  <div class="row justify-content-around">
+
+
+    <div class ="description-new">
+
+      <br/>
+      <div class = "description-onedetail" style="font-size:32px;color:white;opacity:0.9;"><h2 ><br/><br/><br/>Want to RentYourBike ?</h2>
+        <p style="font-size:24px; opacity:0.8"><br/>Enter your bike's details <br/>to start renting your bike<br/> to other members <br/>of Rentabike's community <br/>and start earning <span id="dollar">💲💲💲
+        </span></p>
+      </div>   <br/><br/>
+
+
     </div>
 
 
 
-    <br/>
-    <br/>
 
 
-  </div>
 
-  <div class="form">
-    <h2 style="color:white">..just add your bike to the platform !</h2>
-<br/><br/>
-    <div class="container-new-form";">
-      <%= simple_form_for(@bike) do |f| %>
+      <div class="form">
+        <h2 style="text-transform:uppercase; color:yellow; font-family: Montserrat, sans-serif; background:black; font-size:28px">..just add your bike to the platform !</h2>
+        <br/><br/>
 
-      <%= f.error_notification %>
 
-      <div class="form-inputs">
-        <%= f.label :model, "Enter the name of your bike model"%>
-        <%= f.text_field :model, :class => "form-control" %>
 
-        <br/>
+        <div class="container-new-form">
+          <%= simple_form_for(@bike) do |f| %>
 
-        <%= f.label :condition, "What condition is your bike in?"%>
-        <%= f.text_field :condition, :class => "form-control" %>
+          <%= f.error_notification %>
 
-        <br/>
-        <%= f.label :price, "Enter the rental price per month for your bike"%>
-        <%= f.number_field :price, :class => "form-control" %>
+          <div class="form-inputs">
+            <%= f.label :model, "Enter the name of your bike model"%>
+            <%= f.text_field :model, :class => "form-control" %>
 
-        <br/>
-        <%= f.label :address, "Where can we rent your bike?"%>
-        <%= f.text_field :address, :class => "form-control", :id => "bike_address" %>
+            <br/>
 
-        <br/>
+            <%= f.label :condition, "What condition is your bike in?"%>
+            <%= f.text_field :condition, :class => "form-control" %>
 
-        <%= f.input :photo, as: :file, :class => "form-control" %>
+            <br/>
+            <%= f.label :price, "Enter the rental price per month for your bike"%>
+            <%= f.number_field :price, :class => "form-control" %>
+
+            <br/>
+            <%= f.label :address, "Where can we rent your bike?"%>
+            <%= f.text_field :address, :class => "form-control", :id => "bike_address" %>
+
+            <br/>
+
+            <%= f.input :photo, as: :file, :class => "form-control" %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.submit %>
+          </div>
+         <% end %>
+        </div>
       </div>
-
-      <div class="form-actions">
-        <%= f.submit %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-
 
 </div>
-
-
+    </div>
 
 <div class="footer">
   <div class="footer-copyright">
