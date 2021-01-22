@@ -1,16 +1,27 @@
 
 .container-new-form {
  opacity: 0.9;
-  border: 2px solid rgba(250,0,0,0.7);
+  border: 2px solid rgba(250,0,0,0.3);
   box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
   text-align: center;
   border-radius: 10px;
   font-size:auto;
-  background: rgba(0,10,20,1);
-  line-height: 3.3em;
+  background: rgba(0,10,20,0.8);
+  line-height: 2.3em;
   padding: 10px;
   align-items:center;
   height:auto;
+}
+.container-newbike ::before {
+ background:rgba(0,35,53,0.7);
+}
+
+.imperatif {
+font-size: 58px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffc001;
+  margin: 0px;
 }
 
 .container-newbike {
@@ -22,9 +33,11 @@
   text-align:center;
   border:3px dashed black;
   background-image: asset-url('city-bike.jpg');
+  background:rgba(0,35,53,0.7);
   background-size:cover;
   background-position: center;
   margin-top:20px;
+
 // background: -webkit-gradient(linear, left top, right top, from(rgba(250,0,0,0.7))), to(rgba(0,0,0,0.8));
 //     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(250,0,0,0.7));
 }
@@ -39,14 +52,15 @@
 
 
   opacity: 0.9;
-  border: 2px solid rgba(250,0,0,0.7);
+  border: 2px solid rgba(250,0,0,0.5);
   box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
   text-align: center;
   border-radius: 10px;
   font-size:auto;
-  background: rgba(0,10,20,1);
+  background: rgba(0,10,20,0.8);
   line-height: 3.3em;
   padding: 10px;
+  max-height:580px;
 
 
 }
