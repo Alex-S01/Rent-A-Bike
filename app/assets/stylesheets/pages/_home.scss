@@ -2,8 +2,11 @@
 
 body{
   background:rgba(0,35,53,1);
+  font-family: Montserrat, sans-serif;
 }
-
+*{
+  font-family: Montserrat, sans-serif;
+}
 
 
 
@@ -279,11 +282,31 @@ margin:0 auto;
 border:1px solid white;
 }
 
+
+
+
+
+
 .inner-container {
   margin:0 auto;
-  width:200px;
-  transform:translate(0px,-200px);
+  width:auto;
+
+  opacity:0.7;
 }
+
+
+.inner-container p {
+  margin:0 auto;
+  width:auto;
+  transform:translate(0px,243px);
+  opacity:0.9;
+  text-shadow:0 0 1px;
+}
+
+
+
+
+
 .title-home {
   color:red;
   margin-bottom:200px;
@@ -314,14 +337,23 @@ border:1px solid white;
 
 
 
-@media(max-width: 768px) {
-  .banner-content-home {
-  }
+@media screen and (max-width: 36px) {
 
-  }
+.inner-container {
+  margin:0 auto;
+  width:auto;
+  transform:translate(-600px,-130px);
+  opacity:0.7;
+}
 
 
-
+.inner-container p {
+  margin:0 auto;
+  width:auto;
+  transform:translate(430px,223px);
+  opacity:0.7;
+}
+}
 
 
 
