@@ -11,7 +11,8 @@ class BikesController < ApplicationController
         @markers = @bikes.geocoded.map do |bike|
           {
             lat: bike.latitude,
-            lng: bike.longitude
+            lng: bike.longitude,
+            infoWindow: render_to_string(partial: "info_window", locals: { bike: bike })
           }
         end
       else
@@ -19,7 +20,8 @@ class BikesController < ApplicationController
         @markers = @bikes.geocoded.map do |bike|
           {
             lat: bike.latitude,
-            lng: bike.longitude
+            lng: bike.longitude,
+            infoWindow: render_to_string(partial: "info_window", locals: { bike: bike })
           }
         end
       end
