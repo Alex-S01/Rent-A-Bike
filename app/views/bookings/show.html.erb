@@ -37,17 +37,12 @@
                                 <br/>
 
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <p class="m-b-10 f-w-600"> Number of bookings made: <%= @bookings.count %> </p>
-
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="m-b-10 f-w-600"> Number of bikes owned: <%= @bikes.count %>  </p>
-
-                                    </div>
-                                    p>Rented by: <%= @booking.bike.user.first_name %> </p>
-                                     <p>Price: <%= @booking.bike.price %> </p>
+                                  <p>Rented by: <%= @booking.bike.user.first_name %></p>
                                 </div>
+                                <div class="row">
+                                  <p>Price: <%= @booking.bike.price %></p>
+                                </div>
+                                     
 
                                 <%= link_to 'Home', root_path %>|
       <%= link_to 'Edit booking', edit_bike_booking_path(@booking.bike_id) %>
