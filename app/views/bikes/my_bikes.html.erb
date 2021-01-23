@@ -40,11 +40,11 @@
     <% @bikes.each do |bike| %>
 
 
-      <div class="cardmybike" style="border:3px solid white">
+      <div class="cardmybike" style="border:3px solid white;border-radius:10px">
         <p> <h2><%= bike.model if bike.user == current_user %></h2>
 
 <br>
-          <%= link_to "View bike", bike_path(bike), :class => "btn btn-info" %> | <%= link_to "View bookings", bike_bookings_path(bike), :class => "btn btn-info" %></p>
+          <%= link_to "View bike", bike_path(bike), :style => "color:white;" %> | <%= link_to "View bookings", bike_bookings_path(bike), :style => "color:white;" %></p>
         <p>You have <%= bike.bookings.count %> bookings for this bike</p>
       </div>
 
