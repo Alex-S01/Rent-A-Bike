@@ -1,7 +1,11 @@
-<div class="container">
+<div id="booking" class="section">
+  <div class="section-center">
+      <div class="continer">
+        <div class="row">
+          <div class="booking-form">
+            <div class="form-header">
   <div class="form">
     <h1>Edit your booking for the bike "<%= @bike.model %>"</h1>
-    <%= link_to 'Back', booking_path %>
     <h3>Price: € <%= @bike.price %> / month.</h3>
     <p>Your chosen dates</p>
       <div class="container-new-form">
@@ -13,9 +17,12 @@
               <div class="form-actions">
             <%= f.submit %>
               </div>
+              <%= link_to 'Back', booking_path %>
           <% end %>
     </div>
   </div>
 </div>
-
+</div>
+</div>
+</div>
 
