@@ -16,9 +16,9 @@
 
   <div class="button-booking">
       <% if @bike.user != current_user %>
-      <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-light", :style => "font-size: 20px; border-radius:10px; width:100px; display:inline; margin-right:30px" %>
+      <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-light", :style => "color:white;font-size: 20px; border-radius:10px; width:100px; display:inline; margin-right:30px; background:rgba(250,0,0,0.5)" %>
       <% end %>
-    <%= link_to "Back to home page", bikes_path,:class  => "btn btn-light", :style => "font-size: 20px; border-radius:10px; display:inline; width:100px"%>
+    <%= link_to "Back to homepage", bikes_path,:class  => "btn btn-light", :style => "font-size: 20px; border-radius:10px; display:inline; width:100px"%>
   <br>
   </div>
 </div>
