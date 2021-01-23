@@ -1,56 +1,27 @@
 
-
-
-<div>
-<div class="bikeshow-container">
-
-
-
-<div class="img">
-   <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
- </div>
-
-<div class="toutsaufimage">
-
-
- <div class="bike-details"> Some details about this bike</div>
-
-
- <div class ="index-description-all" style="color:white;">
-
-  <div class = "model name" style="font-size:30px;"><%= @bike.model%> </div>       <br/>
-
-    <div class = "descrition-one detail"> State : <%= @bike.condition %> </div>
-    <div class = "descrition-one detail"> <%= @bike.price %> EUR/month</div>
-    <div class = "descrition-one detail"> <%= @bike.address %></div>
-          <br/>
-  <div>
-    <% if @bike.user != current_user %>
-
-
-    <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-info", :style => "font-size: 20px; border-radius:10px; width:100px" %>
-    <% end %>
+<div class="container-bike-show">
+  <div class="card-product">
+    <% if @bike.photo.attached? %>
+            <%= cl_image_tag @bike.photo.key, height: 216, width: 288, crop: :fill, :style => 'border-radius: 8px;' %>
+          <% else %>
+            <img src="https://picsum.photos/400/300" class="card-img-top" src="..." alt="Card image cap">
+          <% end %>
+    <div class="card-product-infos">
+      <h2><%= @bike.model%> </h2>
+      <p>State : <%= @bike.condition %></p>
+      <p>Price: <%= @bike.price %> EUR/month</p>
+      <p>Address: <%= @bike.address %></p>
+    </div>
   </div>
 
-
-
-  <%= link_to "<<- Back", bikes_path, :style => "color:black;font-size: 14px;border-radius:10px;"%>
-
-
+  <div class="button-booking">
+      <% if @bike.user != current_user %>
+      <%= link_to "Book now", new_bike_booking_path(@bike), :class  => "btn btn-light", :style => "font-size: 20px; border-radius:10px; width:100px; display:inline; margin-right:30px" %>
+      <% end %>
+    <%= link_to "Back to home page", bikes_path,:class  => "btn btn-light", :style => "font-size: 20px; border-radius:10px; display:inline; width:100px"%>
+  <br>
+  </div>
 </div>
-</div>
-
-<div id="map"
-style="width:20%;height:450px;"
-data-markers="<%= @markers.to_json %>"
-data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
-
-</div>
-</div>
-
-<br>
-
 
 <div class="footer">
   <div class="footer-copyright">
