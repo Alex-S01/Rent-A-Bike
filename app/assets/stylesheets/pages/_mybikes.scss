@@ -6,11 +6,31 @@
 
 
 .cardmybike {
-background-image: asset-url('vacs2.jpg');
+
 width:17.5rem;
-height: 170px;
+height: 300px;
 border-radius:10px;
 margin:0 auto;
 }
 
+.mybikesdisplayed
+{
 
+width:17.5rem;
+height: 300px;
+border-radius:10px;
+margin:0 auto;
+}
+
+.cards1 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    padding: 16px;
+}
+
+#wrappist {
+
+  flex-wrap:wrap;
+}
